@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0,user-scalable=no" />
+        <title>ToDoList</title>
+        <link type="text/css" rel="stylesheet" href="css/index.css" >
+</head>
+<body>
+        <div class="wrap">
+            <!--上面的时间内容-->
+            <div class="time">
+                <h3 id="concrete_time"></h3>
+            </div>
+            <!--顶栏的内容-->
+            <div class="header">
+               <form id="form" action="javascript:postAction()" >
+                <label for="title">ToDoList</label>
+                <input id="title" name="'title" placeholder="添加ToDo" required="required"
+                 autocapitalize="off" type="text">
+             </form>
+            </div>
+ 
+            <!--中间的内容-->
+            <div class="section">
+                <h2>
+                    正在进行的计划
+                    <span id="todocount">0</span>
+                </h2>
+                <ul id="todolist"></ul>
+                    <h2>
+                        已经完成的计划
+                        <span id="donecount">0</span>
+                    </h2>
+                <ul id="donelist"></ul>
+            </div>
+ 
+            <!-- 清除键内容-->
+            <div class="clear">
+                <div class='clear-logo'  id="btn"></div>
+                <div class="clear_write">
+                    <a href="javascript:clear();">清空所有计划</a>
+                 </div>
+ 
+            </div>
+</body>
+    <script type="text/javascript" src="js/index.js">
+ 
+    </script>
+</html>
